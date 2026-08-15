@@ -69,6 +69,12 @@ I care about the parts most demos skip: what the screen says when the data is mi
 
 <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shankarmishra&theme=github_dark" alt="Profile summary" />
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankarmishra/shankarmishra/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/shankarmishra/shankarmishra/output/snake.svg" />
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/shankarmishra/shankarmishra/output/snake.svg" width="98%" />
+</picture>
+
 </div>
 
 ---
