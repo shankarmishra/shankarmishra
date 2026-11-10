@@ -7,10 +7,18 @@ import json, os, html
 from collections import OrderedDict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "cards")
 STATIC = os.environ.get("STATIC") == "1"
-BG, CARD, LINE = "#0a0f1c", "#0d1322", "#1c2740"
-INK, MUTE, GREEN, BLUE = "#e8eefc", "#8a97b5", "#17E8A0", "#4f8cff"
+THEMES = {
+    "dark": dict(BG="#0a0f1c", CARD="#0d1322", LINE="#1c2740", INK="#e8eefc", MUTE="#8a97b5", GREEN="#17E8A0", BLUE="#4f8cff", BAR="#24324f"),
+    "light": dict(BG="#f6f8fc", CARD="#ffffff", LINE="#d5dcea", INK="#0b1220", MUTE="#55627c", GREEN="#08925f", BLUE="#2563eb", BAR="#cfd8ea"),
+}
+BG = CARD = LINE = INK = MUTE = GREEN = BLUE = BAR = ""
+
+
+def use(name):
+    global BG, CARD, LINE, INK, MUTE, GREEN, BLUE, BAR, OUT
+    globals().update(THEMES[name])
+    OUT = os.path.join(ROOT, "cards") if name == "dark" else os.path.join(ROOT, "cards", "light")
 SANS = "-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 SERIF = "Georgia,'Times New Roman',serif"
@@ -153,7 +161,7 @@ def activity():
     x0, bw, gap, base, top = 56, 40, 28, 190, 84
     for i, (k, v) in enumerate(zip(keys, vals)):
         hh = max(3, (v / mx) * (base - top))
-        col = BLUE if i == best else "#24324f"
+        col = BLUE if i == best else BAR
         bars += (f'<g><rect class="bar" x="{x0 + i * (bw + gap)}" y="{base - hh:.0f}" width="{bw}" height="{hh:.0f}" '
                  f'rx="6" fill="{col}"{d(i, .3)}/>'
                  f'<text x="{x0 + i * (bw + gap) + bw / 2}" y="{base + 20}" text-anchor="middle" font-size="12" fill="{MUTE}" class="m">'
@@ -208,11 +216,17 @@ def repos():
         write(f"repo-{i + 1}.svg", svg(430, 176, body))
 
 
-if __name__ == "__main__":
+def build():
     hero()
     tile("BRAHMAI / BACKEND", 79, "Flask API routes", "teacher review, scanner, safety controls", GREEN, 0)
     tile("BRAHMAI / TESTS", 1144, "pytest tests", "135 files, plus 45 Playwright E2E", BLUE, 1)
     tile("BOX SELECTION / CI", 78, "tests, with CI", "Django REST, Python 3.11 and 3.12", GREEN, 2)
     activity()
     repos()
-    print("cards written to", OUT)
+
+
+if __name__ == "__main__":
+    for th in THEMES:
+        use(th)
+        build()
+    print("cards written to", ROOT + "/cards (dark) and /cards/light")

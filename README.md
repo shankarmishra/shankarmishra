@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="cards/hero.svg" alt="Shankar Mishra, Python developer who puts LLM features into production" width="880" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="cards/hero.svg" /><img src="cards/light/hero.svg" alt="Shankar Mishra, Python developer who puts LLM features into production" width="880" /></picture>
 
 </div>
 
@@ -14,9 +14,9 @@ I also take products for paying clients from first commit to a live server. The 
 
 <div align="center">
 
-<img src="cards/tile-1.svg" alt="79 Flask API routes in BrahmAI" width="32.5%" />
-<img src="cards/tile-2.svg" alt="1,144 pytest tests in BrahmAI" width="32.5%" />
-<img src="cards/tile-3.svg" alt="78 tests with CI in box-selection-system" width="32.5%" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="cards/tile-1.svg" /><img src="cards/light/tile-1.svg" alt="79 Flask API routes in BrahmAI" width="32.5%" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="cards/tile-2.svg" /><img src="cards/light/tile-2.svg" alt="1,144 pytest tests in BrahmAI" width="32.5%" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="cards/tile-3.svg" /><img src="cards/light/tile-3.svg" alt="78 tests with CI in box-selection-system" width="32.5%" /></picture>
 
 </div>
 
@@ -24,10 +24,10 @@ I also take products for paying clients from first commit to a live server. The 
 
 <div align="center">
 
-<a href="https://github.com/shankarmishra/mini-rag-qa"><img src="cards/repo-1.svg" alt="mini-rag-qa" width="49%" /></a>
-<a href="https://github.com/shankarmishra/AIVOA"><img src="cards/repo-2.svg" alt="AIVOA" width="49%" /></a>
-<a href="https://github.com/shankarmishra/box-selection-system"><img src="cards/repo-3.svg" alt="box-selection-system" width="49%" /></a>
-<a href="https://github.com/shankarmishra/openhinglish"><img src="cards/repo-4.svg" alt="openhinglish" width="49%" /></a>
+<a href="https://github.com/shankarmishra/mini-rag-qa"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/repo-1.svg" /><img src="cards/light/repo-1.svg" alt="mini-rag-qa" width="49%" /></picture></a>
+<a href="https://github.com/shankarmishra/AIVOA"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/repo-2.svg" /><img src="cards/light/repo-2.svg" alt="AIVOA" width="49%" /></picture></a>
+<a href="https://github.com/shankarmishra/box-selection-system"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/repo-3.svg" /><img src="cards/light/repo-3.svg" alt="box-selection-system" width="49%" /></picture></a>
+<a href="https://github.com/shankarmishra/openhinglish"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/repo-4.svg" /><img src="cards/light/repo-4.svg" alt="openhinglish" width="49%" /></picture></a>
 
 </div>
 
@@ -37,7 +37,7 @@ BrahmAI is private and in production. [menusqr.in](https://menusqr.in) is live.
 
 <div align="center">
 
-<img src="cards/activity.svg" alt="Monthly GitHub activity for the last 12 months" width="880" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="cards/activity.svg" /><img src="cards/light/activity.svg" alt="Monthly GitHub activity for the last 12 months" width="880" /></picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shankarmishra/shankarmishra/output/snake-dark.svg" />

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img"><defs><linearGradient id="sh" x1="0" x2="1" y1="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#0b1220"/><stop offset=".42" stop-color="#0b1220"/><stop offset=".5" stop-color="#08925f"/><stop offset=".58" stop-color="#0b1220"/><stop offset="1" stop-color="#0b1220"/><animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="4.5s" repeatCount="indefinite"/></linearGradient></defs>
+<style>
+text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace} .s{font-family:Georgia,'Times New Roman',serif}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes pulse{0%,100%{opacity:.25}50%{opacity:.9}}
+@keyframes blink{50%{opacity:0}}
+@keyframes swing{0%{opacity:0;transform:translateY(22px) rotate(-2deg)}70%{transform:translateY(-4px) rotate(.4deg)}100%{opacity:1;transform:none}}
+.up{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+.ring{animation:pulse 2.8s ease-in-out infinite}
+.cur{animation:blink 1s steps(1) infinite}
+.tile{animation:swing .9s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="880" height="250" rx="18" fill="#f6f8fc"/>
+<rect x=".5" y=".5" width="879" height="249" rx="17.5" fill="none" stroke="#d5dcea"/>
+<circle cx="800" cy="40" r="120" fill="#08925f" opacity=".05"/><circle cx="840" cy="210" r="90" fill="#2563eb" opacity=".06"/>
+<g class="up" style="animation-delay:0.00s"><circle cx="46" cy="46" r="5" fill="#08925f" class="ring"/>
+<text x="60" y="51" font-size="13" fill="#08925f" class="m" letter-spacing="1.5">OPEN TO WORK</text></g>
+<g class="up" style="animation-delay:0.12s"><text x="40" y="112" font-size="54" class="s" fill="#0b1220">Shankar</text>
+<text x="264" y="112" font-size="54" class="s" fill="url(#sh)" font-style="italic">Mishra</text></g>
+<g class="up" style="animation-delay:0.24s"><text x="40" y="152" font-size="19" fill="#55627c">Python developer who puts LLM features into production.</text>
+<text x="40" y="174" font-size="14" fill="#55627c" class="m">Mumbai first. Noida, other cities and remote also fine.<tspan class="cur" fill="#08925f"> _</tspan></text></g>
+<g class="up" style="animation-delay:1.40s"><rect x="40" y="188" width="67" height="30" rx="15" fill="#ffffff" stroke="#d5dcea"/><text x="74" y="208" text-anchor="middle" font-size="13" fill="#55627c" class="m">Python</text></g><g class="up" style="animation-delay:1.52s"><rect x="117.19999999999999" y="188" width="141" height="30" rx="15" fill="#ffffff" stroke="#d5dcea"/><text x="188" y="208" text-anchor="middle" font-size="13" fill="#55627c" class="m">Flask / FastAPI</text></g><g class="up" style="animation-delay:1.64s"><rect x="268.2" y="188" width="84" height="30" rx="15" fill="#ffffff" stroke="#d5dcea"/><text x="310" y="208" text-anchor="middle" font-size="13" fill="#55627c" class="m">LLM apps</text></g><g class="up" style="animation-delay:1.76s"><rect x="361.79999999999995" y="188" width="100" height="30" rx="15" fill="#ffffff" stroke="#d5dcea"/><text x="412" y="208" text-anchor="middle" font-size="13" fill="#55627c" class="m">PostgreSQL</text></g><g class="up" style="animation-delay:1.88s"><rect x="471.79999999999995" y="188" width="43" height="30" rx="15" fill="#ffffff" stroke="#d5dcea"/><text x="493" y="208" text-anchor="middle" font-size="13" fill="#55627c" class="m">AWS</text></g></svg>
