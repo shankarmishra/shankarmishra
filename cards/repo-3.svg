@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="176" viewBox="0 0 430 176" role="img"><defs></defs>
+<style>
+text{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace} .s{font-family:Georgia,'Times New Roman',serif}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes pulse{0%,100%{opacity:.25}50%{opacity:.9}}
+@keyframes blink{50%{opacity:0}}
+@keyframes swing{0%{opacity:0;transform:translateY(22px) rotate(-2deg)}70%{transform:translateY(-4px) rotate(.4deg)}100%{opacity:1;transform:none}}
+.up{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+.bar{transform-box:fill-box;transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+.ring{animation:pulse 2.8s ease-in-out infinite}
+.cur{animation:blink 1s steps(1) infinite}
+.tile{animation:swing .9s cubic-bezier(.2,.8,.2,1) both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><g class="tile" style="animation-delay:0.10s">
+<rect width="430" height="176" rx="16" fill="#0d1322"/><rect x=".5" y=".5" width="429" height="175" rx="15.5" fill="none" stroke="#1c2740"/>
+<rect x="0" y="22" width="4" height="28" rx="2" fill="#17E8A0"/>
+<text x="28" y="42" font-size="17" font-weight="700" fill="#e8eefc" class="m">box-selection-system</text>
+<text x="402" y="42" text-anchor="end" font-size="16" fill="#17E8A0" class="ring">↗</text>
+<text x="28" y="74" font-size="13.5" fill="#8a97b5">Picks the cheapest box an order really fits in, using a 3D</text><text x="28" y="94" font-size="13.5" fill="#8a97b5">packing check that explains every rejection. 78 tests, CI.</text><rect x="28" y="136" width="100" height="24" rx="12" fill="none" stroke="#1c2740"/><text x="78" y="152" text-anchor="middle" font-size="11.5" fill="#e8eefc" class="m">Django REST</text><rect x="135.6" y="136" width="62" height="24" rx="12" fill="none" stroke="#1c2740"/><text x="166" y="152" text-anchor="middle" font-size="11.5" fill="#e8eefc" class="m">pytest</text><rect x="205.2" y="136" width="31" height="24" rx="12" fill="none" stroke="#1c2740"/><text x="221" y="152" text-anchor="middle" font-size="11.5" fill="#e8eefc" class="m">CI</text></g></svg>
